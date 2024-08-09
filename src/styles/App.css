@@ -35,18 +35,21 @@ input,label{
 }
 
 
-input:focus {
+input:focus, textarea:focus {
   border-color: #007bff;
   outline: none;
 }
 
-input {
+input,textarea {
   margin-top: 7px;
   width: 100%;
   padding: 0.5rem;
   font-size: 1.1rem;
   border-radius: 7px;
   border: 2px solid rgb(85, 85, 85);
+}
+textarea{
+  height: 6rem;
 }
 button {
   padding: 15px 25px;

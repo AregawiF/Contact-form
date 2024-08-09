@@ -42,7 +42,7 @@ export default function ContactForm(){
                 <div className="input_container">
                     <label htmlFor="message" >Message</label>
                     <br />
-                    <input placeholder="Type your message here" type="text" id="message" {...register('message', {
+                    <textarea placeholder="Type your message here" id="message" {...register('message', {
                         required: 'Message is required!'
                     })}/>
                     <p className="error">{errors.message?.message}</p>
