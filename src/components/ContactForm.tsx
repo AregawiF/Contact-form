@@ -1,5 +1,4 @@
 import { useForm } from "react-hook-form";
-import { DevTool } from "@hookform/devtools";
 
 type FormValues = {
     name: string
@@ -9,7 +8,7 @@ type FormValues = {
 
 export default function ContactForm(){
     const form = useForm<FormValues>();
-    const { register, control, handleSubmit, formState} = form;
+    const { register, handleSubmit, formState} = form;
     const { errors } = formState;
 
     function Submit(data: FormValues){
@@ -53,7 +52,6 @@ export default function ContactForm(){
                 <button type="submit" className="submit">Submit</button>
 
             </form>
-            <DevTool control={control}/>
         </div>
     );
 }
